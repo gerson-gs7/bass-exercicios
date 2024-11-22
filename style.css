@@ -1,0 +1,25 @@
+:root{
+    --cinza-primario: #151515;
+    --cinza-secundario: #e6dfdf;
+    --fonte: 'Inter';
+}
+body{
+    font-family: var(--fonte);
+    
+}
+.fonte-pesada{
+    font-weight: 700;
+}
+.cinza-primario{
+    background-color: var(--cinza-primario);
+}
+.cinza-secundario{
+    background-color: var(--cinza-secundario);
+}
+.texto-maior-banner{
+    font-size: 13px;
+
+}
+.texto-menor-banner{
+    font-size: 13px;
+}
