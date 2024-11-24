@@ -3,12 +3,12 @@
     --claro-secundario: #ececec;
     --escuro-primario: #121213;
     --escuro-secundario: #2e2e2e;
-    --fonte-grande: 'Unbounded', cursive;
-    --fonte-pequena: 'Inter';
+    --fonte-titulos: 'Unbounded', cursive;
+    --fonte-textos: 'Inter';
 }
 
 .fonte-pesada {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .cor-primaria-claro {
@@ -28,14 +28,18 @@
 }
 
 p {
-    font-family: var(--fonte-pequena);
+    font-family: var(--fonte-textos);
     font-size: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: var(--fonte-grande);
+h1{
+    font-family: var(--fonte-titulos);
+    font-size: 2.4rem;
+}
+h2{
+    font-family: var(--fonte-titulos);
+    font-size: 1.8rem;
+}
+h3{
+    font-family: var(--fonte-titulos);
 }
