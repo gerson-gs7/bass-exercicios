@@ -41,15 +41,15 @@
                     </nav>
                 </div>
                 <div class="d-flex flex-row-reverse col-md-10">
-                    <nav class="navbar navbar-expand-lg navbar-dark">
+                    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                                 <a class="nav-item nav-link active" href="#">Home <span
                                         class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="#">Services</a>
-                                <a class="nav-item nav-link" href="#">About Us</a>
-                                <a class="nav-item nav-link" href="#">Products</a>
-                                <a class="nav-item nav-link" href="#">Contact Us</a>
+                                <a class="nav-item nav-link" href="#transformacoes">Transformações</a>
+                                <a class="nav-item nav-link" href="#o-criador">O Criador</a>
+                                <a class="nav-item nav-link" href="#fusoes">Fusões</a>
+                                <a class="nav-item nav-link" href="#get-in-touch">Get In Touch</a>
                                 <div class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,6 +67,7 @@
                     </nav>
                 </div>
             </div>
+
             <div class="flex-container">
                 <div class="container py-5">
                     <div class="row">
@@ -92,175 +93,189 @@
 
             </div>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/VuY0ABWfjSE?si=zwtU-lOe344oLvj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/VuY0ABWfjSE?si=zwtU-lOe344oLvj4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
 
-        <div class="flex-container mb-5">
-            <div class="my-5">
-                <h2 class="text-center">TRANSFORMAÇÕES DO SON GOKU</h2>
-            </div>
-            <div class="row mx-3 mx-md-5 mx-xl-5">
-                <div class="col-xl-4 col-md-4 col-12">
-                    <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
-                        <img class="col-12 col-xl-9" src="img/desktop/card-goku.png" alt="">
-                        <div class="my-3 px-xl-5 mx-xl-1">
-                            <h3 class="text-center py-2">Guku normal</h3>
-                            <div class="text-center">
-                                <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
-                                    href="#descricao-goku-normal" role="button" aria-expanded="false"
-                                    aria-controls="descricao-goku-normal">
-                                    Saiba mais
-                                </i>
-                            </div>
-                            <div class="collapse pt-3" id="descricao-goku-normal">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                    labore
-                                </p>
-                            </div>
 
-                        </div>
-                    </div>
-                    <hr class="d-md-none d-xl-none">
+            <div id="transformacoes" class="flex-container mb-5">
+                <div class="my-5">
+                    <h2 class="text-center">TRANSFORMAÇÕES DO SON GOKU</h2>
                 </div>
 
-                <div class="col-xl-4 col-md-4 col-12">
-                    <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
-                        <img class="col-12 col-xl-9" src="img/desktop/card-goku-ssj3.png" alt="">
-                        <div class="my-3 px-xl-5 mx-xl-1">
-                            <h3 class="text-center py-2">Guku SSJ3</h3>
-                            <div class="text-center">
-                                <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
-                                    href="#descricao-goku-ssj3" role="button" aria-expanded="false"
-                                    aria-controls="descricao-goku-ssj3">
-                                    Saiba mais
-                                </i>
-                            </div>
-                            <div class="collapse pt-3" id="descricao-goku-ssj3">
-                                <p>Está entre as mais poderosas transformações Super Saiyajin. Goku foi o primeiro a
-                                    conseguir a forma, fazendo-o em seus sete anos de treinamento no Outro Mundo.
-                                </p>
-                            </div>
+                <div class="row mx-3 mx-md-5 mx-xl-5">
+                    <div class="col-xl-4 col-md-4 col-12">
+                        <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
+                            <img class="col-12 col-xl-9" src="img/desktop/card-goku.png" alt="">
+                            <div class="my-3 px-xl-5 mx-xl-1">
+                                <h3 class="text-center py-2">Guku normal</h3>
+                                <div class="text-center">
+                                    <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
+                                        href="#descricao-goku-normal" role="button" aria-expanded="false"
+                                        aria-controls="descricao-goku-normal">
+                                        Saiba mais
+                                    </i>
+                                </div>
+                                <div class="collapse pt-3" id="descricao-goku-normal">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                                        incidunt ut
+                                        labore
+                                    </p>
+                                </div>
 
-                        </div>
-                    </div>
-                    <hr class="d-md-none d-xl-none">
-                </div>
-                <div class="col-xl-4 col-md-4 col-12">
-                    <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
-                        <img class="col-12 col-xl-9" src="img/desktop/goku_ssj_blue.png" alt="">
-                        <div class="my-3 px-xl-5 mx-xl-1">
-                            <h3 class="text-center py-2">Saiyajin Blue</h3>
-                            <div class="text-center">
-                                <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
-                                    href="#descricao-goku-blue" role="button" aria-expanded="false"
-                                    aria-controls="descricao-goku-blue">
-                                    Saiba mais
-                                </i>
-                            </div>
-                            <div class="collapse pt-3" id="descricao-goku-blue">
-                                <p>Goku consegue despertá-la após passar por um período de treinamento ao lado de Whis.
-                                    No
-                                    entanto, Dragon Ball não revelou exatamente o que fez para conseguir usá-la.
-                                </p>
                             </div>
                         </div>
+                        <hr class="d-md-none d-xl-none">
+                    </div>
+
+                    <div class="col-xl-4 col-md-4 col-12">
+                        <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
+                            <img class="col-12 col-xl-9" src="img/desktop/card-goku-ssj3.png" alt="">
+                            <div class="my-3 px-xl-5 mx-xl-1">
+                                <h3 class="text-center py-2">Guku SSJ3</h3>
+                                <div class="text-center">
+                                    <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
+                                        href="#descricao-goku-ssj3" role="button" aria-expanded="false"
+                                        aria-controls="descricao-goku-ssj3">
+                                        Saiba mais
+                                    </i>
+                                </div>
+                                <div class="collapse pt-3" id="descricao-goku-ssj3">
+                                    <p>Está entre as mais poderosas transformações Super Saiyajin. Goku foi o primeiro a
+                                        conseguir a forma, fazendo-o em seus sete anos de treinamento no Outro Mundo.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="d-md-none d-xl-none">
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-12">
+                        <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
+                            <img class="col-12 col-xl-9" src="img/desktop/goku_ssj_blue.png" alt="">
+                            <div class="my-3 px-xl-5 mx-xl-1">
+                                <h3 class="text-center py-2">Saiyajin Blue</h3>
+                                <div class="text-center">
+                                    <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
+                                        href="#descricao-goku-blue" role="button" aria-expanded="false"
+                                        aria-controls="descricao-goku-blue">
+                                        Saiba mais
+                                    </i>
+                                </div>
+                                <div class="collapse pt-3" id="descricao-goku-blue">
+                                    <p>Goku consegue despertá-la após passar por um período de treinamento ao lado de
+                                        Whis.
+                                        No
+                                        entanto, Dragon Ball não revelou exatamente o que fez para conseguir usá-la.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+            <div id="o-criador" class="container">
+                <div class="my-5">
+                    <h2 class="text-center">O CRIADOR</h2>
+                </div>
+                <div class="flex-container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xl-6 py-5 mb-5">
+                            <h3 class="mb-4 text-center">Lord Akira Toriyama</h3>
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera1.png" alt=""> Lorem ipsum
+                                    dolor
+                                    sit amet, consectetur adipisci elit</p>
+                            </div>
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera2.png" alt=""> Sed eiusmod
+                                    tempor incidunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera3.png" alt=""> Ut enim ad
+                                    minim veniam, quis nostrum exercitationem ullam corporis.</p>
+                            </div>
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera7.png" alt=""> Suscipit
+                                    laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                            </div>
+                        </div>
+                        <div class="card col-xl-6 border-0 align-items-center secundaria cor-secundaria-escuro">
+                            <img class="rounded-circle col-xl-8 col-lg-6 col-md-8" src="img/desktop/akira.png" alt="">
+
+                        </div>
                     </div>
                 </div>
 
             </div>
+            <hr>
+            <div id="fusoes" class="container">
+                <div class="my-5">
+                    <h2 class="text-center">FUSÕES</h2>
+                </div>
+                <div class="flex-container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class=" card col-xl-6 border-0 align-items-center secundaria cor-secundaria-escuro">
+                            <img class="rounded-circle col-xl-8 col-lg-6 col-md-8" src="img/desktop/gogeta.png" alt="">
 
-        </div>
-        <hr>
-        <div class="container">
-            <div class="my-4">
-                <h2 class="text-center">O Criador</h2>
-            </div>
-            <div class="flex-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-6 py-5 mb-5">
-                        <h3 class="mb-4 text-center">Lord Akira Toriyama</h3>
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera1.png" alt=""> Lorem ipsum
-                                dolor
-                                sit amet, consectetur adipisci elit</p>
                         </div>
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera2.png" alt=""> Sed eiusmod
-                                tempor incidunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera3.png" alt=""> Ut enim ad
-                                minim veniam, quis nostrum exercitationem ullam corporis.</p>
-                        </div>
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera7.png" alt=""> Suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-                        </div>
-                    </div>
-                    <div class="card col-xl-6 border-0 align-items-center secundaria cor-secundaria-escuro">
-                        <img class="rounded-circle col-xl-8 col-lg-6 col-md-8" src="img/desktop/akira.png" alt="">
+                        <div class="col-xl-6 py-5 mb-5">
+                            <h3 class="mb-4 text-center">Goku & Vegeta</h3>
 
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera1.png" alt=""> Lorem ipsum
+                                    dolor
+                                    sit amet, consectetur adipisci elit</p>
+                            </div>
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera2.png" alt=""> Sed eiusmod
+                                    tempor
+                                    incidunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera3.png" alt=""> Ut enim ad
+                                    minim
+                                    veniam, quis nostrum exercitationem ullam corporis.</p>
+                            </div>
+                            <div>
+                                <p><img class="d-inline mr-1" src="img/desktop/icon-esfera7.png" alt=""> Suscipit
+                                    laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+
             </div>
-
-        </div>
-        <hr>
-        <div class="container">
-            <div class="my-4">
-                <h2 class="text-center">Fusões</h2>
-            </div>
-            <div class="flex-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class=" card col-xl-6 border-0 align-items-center secundaria cor-secundaria-escuro">
-                        <img class="rounded-circle col-xl-8 col-lg-6 col-md-8" src="img/desktop/gogeta.png" alt="">
-
-                    </div>
-                    <div class="col-xl-6 py-5 mb-5">
-                        <h3 class="mb-4 text-center">Goku & Vegeta</h3>
-
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera1.png" alt=""> Lorem ipsum dolor
-                                sit amet, consectetur adipisci elit</p>
-                        </div>
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera2.png" alt=""> Sed eiusmod tempor
-                                incidunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera3.png" alt=""> Ut enim ad minim
-                                veniam, quis nostrum exercitationem ullam corporis.</p>
-                        </div>
-                        <div>
-                            <p><img class="d-inline mr-1" src="img/desktop/icon-esfera7.png" alt=""> Suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-                        </div>
-
+            <hr>
+            <div id="get-in-touch" class="container">
+                <div class="my-5">
+                    <h2 class="text-center">GET IN TOUCH</h2>
+                </div>
+                <div class="flex-container pb-5">
+                    <div class="container">
+                        <img class="rounded mx-auto d-block" src="img/desktop/card-goku-ultra.jpg" alt="">
                     </div>
                 </div>
-            </div>
 
-        </div>
-        <hr>
-        <div class="container">
-            <div class="my-5">
-                <h2 class="text-center">Get In Touch</h2>
             </div>
-            <div class="flex-container pb-5">
-                <div class="container">
-                    <img class="rounded mx-auto d-block" src="img/desktop/card-goku-ultra.jpg" alt="">
-                </div>
-            </div>
-
         </div>
     </main>
 
