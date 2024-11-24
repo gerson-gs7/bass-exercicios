@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/desktop/favicon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Geeks for Geeks</title>
 </head>
 
 <body>
 
-    <main role="main" class="cinza-secundario">
+    <main role="main" class="secundaria cor-secundaria-escuro">
 
-        <div class="cinza-primario">
+        <div class="primaria cor-primaria-escuro">
             <div class="row mx-md-5">
                 <div class="col-md-2">
-                    <nav class="navbar navbar-expand-lg navbar-dark cinza-primario">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
                         <a class="navbar-brand" href="#">Geeks for Geeks</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -34,7 +41,7 @@
                     </nav>
                 </div>
                 <div class="d-flex flex-row-reverse col-md-10">
-                    <nav class="navbar navbar-expand-lg navbar-dark cinza-primario">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                                 <a class="nav-item nav-link active" href="#">Home <span
@@ -43,6 +50,18 @@
                                 <a class="nav-item nav-link" href="#">About Us</a>
                                 <a class="nav-item nav-link" href="#">Products</a>
                                 <a class="nav-item nav-link" href="#">Contact Us</a>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Tema
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <a class="dropdown-item btn_tema_escuro" href="#">Escuro</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item btn_tema_claro" href="#">Claro</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -52,15 +71,17 @@
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-xl-8 py-5 my-5 text-center">
-                            <h2 class="mb-5 text-white fonte-pesada">BEST PROFESSIONAL WEBSITE DESIGN SOFTWARE
+                            <h1 class="mb-5 text-white fonte-pesada">BEST PROFESSIONAL WEBSITE DESIGN SOFTWARE
                                 DEVELOPMENT COMPANY
-                            </h2>
-                            <p class=" text-white">Posso pressentir o perigo e o caos, ninguém agora vai me amedrontar,
+                            </h1>
+                            <h5 style="font-weight: 300;" class=" text-white">Posso pressentir o perigo e o caos, e
+                                ninguém agora vai me amedrontar,
                                 com a minha mente vou a mil lugares, e a imaginação me dá forças pra voar, sonhos
-                                desejamos alcançar ser alguém com o poder maior que você já tem.</p>
-                            <p class="btn btn-info col-4">Contact Us</p>
+                                desejamos alcançar ser alguém com o poder maior que você já tem.</h5>
+                            <br>
+                            <p class="btn btn-info col-4" data-toggle="modal" data-target="#exampleModal">Ouvir</p>
                         </div>
-                        <div class="col-xl-4 text-center">
+                        <div class="col-xl-4 my-auto text-center">
                             <img src="img/desktop/banner-logo-desktop.png" alt="">
 
                         </div>
@@ -69,44 +90,86 @@
 
             </div>
         </div>
-        <div class="flex-container">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/VuY0ABWfjSE?si=zwtU-lOe344oLvj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="flex-container mb-5">
             <div class="my-5">
-                <h1 class="text-center">TRANSFORMAÇÕES DO SON GOKU</h1>
+                <h2 class="text-center">TRANSFORMAÇÕES DO SON GOKU</h2>
             </div>
             <div class="row mx-3 mx-md-5 mx-xl-5">
                 <div class="col-xl-4 col-md-4 col-12">
-                    <div class="card border-0 align-items-center cinza-secundario">
+                    <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
                         <img class="col-12 col-xl-9" src="img/desktop/card-goku.png" alt="">
-                        <div class="my-3 px-xl-5 mx-xl-5">
+                        <div class="my-3 px-xl-5 mx-xl-1">
                             <h3 class="text-center py-2">Guku normal</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                labore
-                            </p>
+                            <div class="text-center">
+                                <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
+                                    href="#descricao-goku-normal" role="button" aria-expanded="false"
+                                    aria-controls="descricao-goku-normal">
+                                    Saiba mais
+                                </i>
+                            </div>
+                            <div class="collapse pt-3" id="descricao-goku-normal">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                    labore
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                     <hr class="d-md-none d-xl-none">
                 </div>
 
                 <div class="col-xl-4 col-md-4 col-12">
-                    <div class="card border-0 align-items-center cinza-secundario">
+                    <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
                         <img class="col-12 col-xl-9" src="img/desktop/card-goku-ssj3.png" alt="">
-                        <div class="my-3 px-xl-5 mx-xl-5">
+                        <div class="my-3 px-xl-5 mx-xl-1">
                             <h3 class="text-center py-2">Guku SSJ3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                labore
-                            </p>
+                            <div class="text-center">
+                                <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
+                                    href="#descricao-goku-ssj3" role="button" aria-expanded="false"
+                                    aria-controls="descricao-goku-ssj3">
+                                    Saiba mais
+                                </i>
+                            </div>
+                            <div class="collapse pt-3" id="descricao-goku-ssj3">
+                                <p>Está entre as mais poderosas transformações Super Saiyajin. Goku foi o primeiro a
+                                    conseguir a forma, fazendo-o em seus sete anos de treinamento no Outro Mundo.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                     <hr class="d-md-none d-xl-none">
                 </div>
                 <div class="col-xl-4 col-md-4 col-12">
-                    <div class="card border-0 align-items-center cinza-secundario">
+                    <div class="card border-0 align-items-center secundaria cor-secundaria-escuro">
                         <img class="col-12 col-xl-9" src="img/desktop/goku_ssj_blue.png" alt="">
-                        <div class="my-3 px-xl-5 mx-xl-5">
-                            <h3 class="text-center py-2">Super Saiyajin Blue</h3>
-                            <p>Goku consegue despertá-la após passar por um período de treinamento ao lado de Whis. No
-                                entanto, Dragon Ball não revelou exatamente o que fez para conseguir usá-la.
-                            </p>
+                        <div class="my-3 px-xl-5 mx-xl-1">
+                            <h3 class="text-center py-2">Saiyajin Blue</h3>
+                            <div class="text-center">
+                                <i class="btn btn-info bi-chevron-double-down" data-toggle="collapse"
+                                    href="#descricao-goku-blue" role="button" aria-expanded="false"
+                                    aria-controls="descricao-goku-blue">
+                                    Saiba mais
+                                </i>
+                            </div>
+                            <div class="collapse pt-3" id="descricao-goku-blue">
+                                <p>Goku consegue despertá-la após passar por um período de treinamento ao lado de Whis.
+                                    No
+                                    entanto, Dragon Ball não revelou exatamente o que fez para conseguir usá-la.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +180,7 @@
         <hr>
         <div class="container">
             <div class="my-4">
-                <h1 class="text-center">O Criador</h1>
+                <h2 class="text-center">O Criador</h2>
             </div>
             <div class="flex-container">
                 <div class="row justify-content-center align-items-center">
@@ -141,8 +204,8 @@
                                 laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                         </div>
                     </div>
-                    <div class="card col-xl-6 border-0 align-items-center cinza-secundario">
-                        <img class="rounded-circle col-xl-8" src="img/desktop/akira.png" alt="">
+                    <div class="card col-xl-6 border-0 align-items-center secundaria cor-secundaria-escuro">
+                        <img class="rounded-circle col-xl-8 col-lg-6 col-md-8" src="img/desktop/akira.png" alt="">
 
                     </div>
                 </div>
@@ -152,12 +215,12 @@
         <hr>
         <div class="container">
             <div class="my-4">
-                <h1 class="text-center">Fusões</h1>
+                <h2 class="text-center">Fusões</h2>
             </div>
             <div class="flex-container">
                 <div class="row justify-content-center align-items-center">
-                    <div class=" card col-xl-6 border-0 align-items-center cinza-secundario">
-                        <img class="rounded-circle col-xl-8" src="img/desktop/gogeta.png" alt="">
+                    <div class=" card col-xl-6 border-0 align-items-center secundaria cor-secundaria-escuro">
+                        <img class="rounded-circle col-xl-8 col-lg-6 col-md-8" src="img/desktop/gogeta.png" alt="">
 
                     </div>
                     <div class="col-xl-6 py-5 mb-5">
@@ -188,19 +251,19 @@
         <hr>
         <div class="container">
             <div class="my-5">
-                <h1 class="text-center">Get In Touch</h1>
+                <h2 class="text-center">Get In Touch</h2>
             </div>
             <div class="flex-container pb-5">
                 <div class="container">
                     <img class="rounded mx-auto d-block" src="img/desktop/card-goku-ultra.jpg" alt="">
                 </div>
-
             </div>
 
         </div>
     </main>
+
     <footer>
-        <div class="cinza-primario">
+        <div class="primaria cor-primaria-escuro">
             <div class="row px-5 py-5 text-white">
                 <div class="py-5 col-12 col-xl-4 col-md-4 text-center">
                     <div class="">
@@ -233,6 +296,7 @@
     </footer>
 
 </body>
+<script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -242,5 +306,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
 
 </html>
